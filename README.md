@@ -3,14 +3,14 @@ Library to control a RV-3028-C7 RTC with toitlang
 
 ## TODO
 
-- [] Implement UNIX Time
-- [] Password protection
-- [] Timer Status / Status Shadow
-- [] Test event control 
-- [] Test Clock Interrupt Mask for Clock Output
-- [] Implement Clock Output options
-- [] General Purpose register
-- [] implement Timestamp?
+- [ ] Implement UNIX Time
+- [ ] Password protection
+- [ ] Timer Status / Status Shadow
+- [ ] Test event control 
+- [ ] Test Clock Interrupt Mask for Clock Output
+- [ ] Implement Clock Output options
+- [ ] General Purpose register
+- [ ] implement Timestamp?
  
 ## Install
 To install the package run
