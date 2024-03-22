@@ -39,3 +39,5 @@ EE_ADDRESS         ::= 0x25
 EE_DATA            ::= 0x26
 EE_COMMAND         ::= 0x27
 ID                 ::= 0x28
+
+EEPROM-BACKUP      ::= 0x37

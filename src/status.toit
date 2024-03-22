@@ -61,3 +61,7 @@ class Status:
 
   clear-power-on-reset:
     status = utils.set-bit status PORF_BIT false
+
+  clear-all-interrupts:
+    status = 0
+    return status
