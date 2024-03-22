@@ -19,9 +19,7 @@ jag pkg install rv-3028-c7
 ```
 
 ## Getting Started
-```
-
-```
+You can find a bunch of example codein the example folder
 
 ## Run tests
 To run all tests you can use
