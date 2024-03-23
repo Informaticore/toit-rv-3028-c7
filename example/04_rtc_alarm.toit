@@ -38,7 +38,7 @@ init-rtc:
 main:
   init-rtc
 
-  interrupt-pin := gpio.Pin 1 --input=true                       //we setup the interrupt pin with pull-up
+  interrupt-pin := gpio.Pin 1 --input=true --pull-up=true        //we setup the interrupt pin with pull-up
   print "Interrupt pin is $(interrupt-pin.get)"
   alarm := Alarm --minutes=Time.now.local.m + 1                  //set alarm to next minute
   rtc.alarm alarm                                                //set alarm and interrupt pin
