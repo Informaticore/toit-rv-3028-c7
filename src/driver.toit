@@ -222,7 +222,6 @@ class RV-3028-C7:
 
     clear-alarm-interrupt
     status_ := status
-    print "Status: $(%b status_.status)"
     enable-periodic-countdown-timer-interrupt enable-interrupt
     enable-periodic-countdown-timer true
 
@@ -241,7 +240,7 @@ class RV-3028-C7:
       throw "Count down timer value $time-value exceeds maximum value"
     
     time-value-int := time-value.to-int
-    print "Time-Value: $time-value-int ($(%b time-value-int))"
-    print "Time-Value (seconds): $(time-value-int / frequency-value[frequency])s"
-    print "Frequency: $frequency-value[frequency]"
+    // print "Time-Value: $time-value-int ($(%b time-value-int))"
+    // print "Time-Value (seconds): $(time-value-int / frequency-value[frequency])s"
+    // print "Frequency: $frequency-value[frequency]"
     return [time-value-int, frequency]
