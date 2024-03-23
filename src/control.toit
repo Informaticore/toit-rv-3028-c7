@@ -82,7 +82,6 @@ class Control:
 
   timer-clock-frequency-value -> int:
     frequency := timer-clock-frequency
-    print "Frequency: $frequency"
     if frequency == 0:
       return 4096
     else if frequency == 1:
@@ -96,7 +95,6 @@ class Control:
 
   timer-clock-frequency frequency:
     if frequency != 0 and frequency > 3: throw "Timer clock frequency must be one of Control.TIMER_CLOCK_FREQUENCY_4096HZ, Control.TIMER_CLOCK_FREQUENCY_64HZ, Control.TIMER_CLOCK_FREQUENCY_1HZ, or Control.TIMER_CLOCK_FREQUENCY_1_60HZ"
-    print "Frequency: $frequency"
     control1 = (control1 & 0xFC) | frequency
 
   is-timestamp-enabled -> bool:
