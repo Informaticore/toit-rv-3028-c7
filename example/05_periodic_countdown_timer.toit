@@ -26,6 +26,12 @@ init-rtc:
   rtc = rv-3028-c7.RV-3028-C7 device.registers
   rtc.reset
 
+  eeprom-backup_ := rtc.eeprom-backup
+  eeprom-backup_.enable-trickle-charger true
+  rtc.eeprom-backup eeprom-backup_
+
+  rtc.clear-all-interrupts
+
   //adjusting esp32-rtc to ntp
   adjust-ntp
   //set RV-3028-C7 to adjusted time
